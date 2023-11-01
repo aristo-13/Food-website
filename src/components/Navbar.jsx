@@ -18,7 +18,7 @@ function Navbar() {
             </div>
         </div>
 
-        <div className='bg-gray-200 w-[200px] sm:w-[400px] lg:w-[500px] flex items-center rounded-full p-2 border border-black'>
+        <div className='bg-gray-200 w-[200px] sm:w-[400px] lg:w-[500px] flex items-center rounded-full p-2 border border-orange-500'>
             <FaSearch />
             <input className='bg-transparent w-full focus:outline-none' type="text" placeholder='search foods...' />
         </div>
