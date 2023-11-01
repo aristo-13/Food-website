@@ -18,7 +18,7 @@ function Navbar() {
             </div>
         </div>
 
-        <div className='bg-gray-200 w-[200px] sm:w-[400px] lg:w-[500px] flex items-center rounded-full p-2'>
+        <div className='bg-gray-200 w-[200px] sm:w-[400px] lg:w-[500px] flex items-center rounded-full p-2 border border-black'>
             <FaSearch />
             <input className='bg-transparent w-full focus:outline-none' type="text" placeholder='search foods...' />
         </div>
@@ -30,7 +30,7 @@ function Navbar() {
 
 
         {/* haburger */}
-        {nav && <div className='bg-black/80 w-full h-screen fixed top-0 left-0 z-10 duration-300 transition-all duration-300'>
+        {nav && <div onClick={() => setNav(!nav)} className='bg-black/80 w-full h-screen fixed top-0 left-0 z-10 transition-all duration-300'>
              
         </div>}
         <div className={nav ? 'bg-white w-[min(100%,300px)] h-screen fixed top-0 left-0 z-10 duration-300' : 'bg-white w-[300px] h-screen fixed top-0 left-[-1000%] z-10 duration-300'}>
