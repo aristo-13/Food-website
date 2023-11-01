@@ -11,7 +11,7 @@ function Navbar() {
             <div className='cursor-pointer'>
                <FaHamburger size={30} onClick={() => setNav(!nav)}/>
             </div>
-            <h2 className='text-[1.2rem]'>Best <span className='font-bold'>Eats</span></h2>
+            <h2 className='text-[1.2rem]'>Burg <span className='font-bold'>Eats</span></h2>
             <div className='hidden lg:flex items-center bg-gray-200 p-1 rounded-full cursor-pointer'>
                 <p className='bg-black text-white p-1 rounded-full'>Delivery</p>
                 <p>Pickup</p>
@@ -35,7 +35,7 @@ function Navbar() {
         </div>}
         <div className={nav ? 'bg-white w-[min(100%,300px)] h-screen fixed top-0 left-0 z-10 duration-300' : 'bg-white w-[300px] h-screen fixed top-0 left-[-1000%] z-10 duration-300'}>
                 <FaTimes size={20} className='absolute right-4 top-4 cursor-pointer' onClick={() => setNav(!nav)}/>
-                <h2 className='text-2xl p-3'>Best <span className='font-bold'>Eats</span></h2>
+                <h2 className='text-2xl p-3'>Burg <span className='font-bold'>Eats</span></h2>
                 <nav>
                     <ul className='flex flex-col p-4 text-gray-800'>
                         <li className='text-xl py-4 flex items-center'><FaTruckMoving className='size={20}  mr-4' /> Orders</li>
